@@ -1,0 +1,19 @@
+:root {
+  --page-bg: #F0F0F0;
+  --header-fg: #ffffff;
+  --button-bg: #ffffff;
+  --button-fg: #2D2D2D;
+  --hover: rgba(0,0,0,0.8);
+  --border: rgba(255,255,255, 0.12);
+  --outline: rgba(0,0,0, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #242424;
+    --header-fg: #ffffff;
+    --button-bg: #303030;
+    --button-fg: #ffffff;
+    --hover: rgba(255,255,255,0.8);
+  }
+}
