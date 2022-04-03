@@ -10,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --page-bg: #242424;
+    --page-bg: #141414;
     --header-fg: #ffffff;
     --button-bg: #303030;
     --button-fg: #ffffff;
