@@ -59,7 +59,13 @@ body {
 }
 
 .entry b::after {
-  content: " →"
+  content: "→";
+  margin-left: 2px;
+  transition: margin 150ms ease-out;
+}
+
+.entry:hover b::after {
+  margin-left: 6px;
 }
 
 .entry:hover {
