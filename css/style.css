@@ -58,6 +58,10 @@ body {
   color: var(--button-fg);
 }
 
+.entry b::after {
+  content: " →"
+}
+
 .entry:hover {
   background-color: var(--hover), var(--button-bg);
 }
