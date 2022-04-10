@@ -6,6 +6,7 @@
   --hover: rgba(0,0,0,0.8);
   --border: rgba(255,255,255, 0.12);
   --outline: rgba(0,0,0, 0.12);
+  --focus-ring: #8C56FF;
 }
 
 @media (prefers-color-scheme: dark) {

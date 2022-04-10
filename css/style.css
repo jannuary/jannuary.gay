@@ -72,14 +72,19 @@ body {
   transition: margin 150ms ease-out;
 }
 
-.entry:hover b::after {
+.entry:hover b::after, .entry:focus b::after {
   margin-left: 6px;
 }
 
-.entry:hover {
+.entry:hover, .entry:focus {
   background-color: var(--hover), var(--button-bg);
 }
 
+.entry:focus {
+  outline-width: 3px;
+  outline-color: var(--focus-ring);
+  transition: outline 150ms ease-out;
+}
 footer p {
  font-size: 14px;
  display: flex;
