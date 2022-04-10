@@ -20,6 +20,7 @@ body {
   height: 100vh;
 }
 
+/* MAIN PAGE HEADER */
 .header, .entry {
   border: 1px solid var(--border);
   outline: 1px solid var(--outline);
@@ -52,6 +53,7 @@ body {
   100%{background-position:0% 50%}
 }
 
+/* ENTRY STYLING */
 .entry {
   position: relative;
   width: 500px;
@@ -81,11 +83,14 @@ body {
 }
 
 .entry:focus {
-  outline-width: 3px;
-  outline-color: var(--focus-ring);
+  border-width: 3px;
+  border-color: var(--focus-ring);
   transition: outline 150ms ease-out;
 }
+
+/* FOOTER */
 footer p {
+ color: var(--button-fg);
  font-size: 14px;
  display: flex;
  opacity: 0.5;
