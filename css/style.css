@@ -23,7 +23,8 @@ body {
 /* MAIN PAGE HEADER */
 .header, .entry {
   border: 1px solid var(--border);
-  outline: 1px solid var(--outline);
+  box-shadow: 0px 0px 0px 1px var(--outline);
+  outline: none;
   box-sizing: border-box;
   border-radius: 12px;
   display: flex;
@@ -85,7 +86,7 @@ body {
 .entry:focus {
   border-width: 3px;
   border-color: var(--focus-ring);
-  transition: outline 150ms ease-out;
+  transition: border 150ms ease-out;
 }
 
 /* FOOTER */
