@@ -12,6 +12,14 @@ body {
   background-color: var(--page-bg);
 }
 
+.main-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+}
+
 .header, .entry {
   border: 1px solid var(--border);
   outline: 1px solid var(--outline);
