@@ -8,6 +8,16 @@ html { font-family: 'Inter', sans-serif; }
   }
 }
 
+@media (prefers-reduced-motion) { 
+.header, .entry:hover, .entry b::after
+  {
+  animation: none !important;
+  transition: none !important;
+  }
+.entry:hover b::after, .entry:focus b::after {
+  margin-left: 2px !important;
+  }
+}
 body {
   background-color: var(--page-bg);
   color: var(--button-fg);
@@ -45,8 +55,6 @@ a {
   background-size: 600% 600%;
   animation: headerAnimation 20s ease infinite;
 }
-
-@media (prefers-reduced-motion) { .header {animation: none;}}
 
 h {
   font-weight: 900;
