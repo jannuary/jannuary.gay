@@ -10,8 +10,12 @@ html { font-family: 'Inter', sans-serif; }
 
 body {
   background-color: var(--page-bg);
+  color: var(--button-fg);
 }
 
+a {
+  color: var(--link-fg);
+}
 .main-page {
   display: flex;
   align-items: center;
@@ -42,9 +46,12 @@ body {
   animation: headerAnimation 20s ease infinite;
 }
 
-.header h {
+h {
   font-weight: 900;
   font-size: 36px;
+}
+
+.header h {
   color: var(--header-fg);
 }
 
@@ -99,3 +106,30 @@ footer p {
  font-weight: 400;
 }
 
+.blurb > * {
+  display: flex;
+  justify-content: center;
+  color: var(--button-fg);
+}
+
+.blurb p {
+  width: 500px;
+  line-height: 1.4;
+  display: inline;
+}
+
+.blurb .link {
+  margin: 6px;
+  color: var(--link-fg);
+}
+
+.blurb .tip {
+  text-decoration: underline dotted;
+}
+
+.link::before {
+  content: "← " 
+}
+.link hover {
+  border-bottom: 3px solid var(--button-fg);
+}

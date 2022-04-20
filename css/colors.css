@@ -7,6 +7,7 @@
   --border: rgba(255,255,255, 0.12);
   --outline: rgba(0,0,0, 0.12);
   --focus-ring: #8C56FF;
+  --link-fg: #4B5DFF;
 }
 
 @media (prefers-color-scheme: dark) {
