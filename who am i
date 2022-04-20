@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>who am i</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body class="main-page">
+  <div class="blurb">
+    <a class="link" href="index.html">back</a>
+    <h>who am i</h>
+    <p>hi there.
+      <br>i go by <p title="/noɛl/" class="tip">noëlle</p> or <p title="/jan/" class="tip">jann</p>. my pronouns are they/them.
+      <br>i'm a queer (bi, trans & non-binary) person based in russia.
+      <br>i'm interested in open source software, ui/ux design, graphics design in general, linguistics, and cement or smth idc<br>
+    </p>
+    <p>
+       <br>you can (hopefully) find my works in <a href="./portfolio">works</a>
+       <br>you can follow me on <a href="https://twitter.com/no00EBlle">twitter</a>, give me money on <a href="https://patreon.com/jannuary">patreon</a> or chat with me on <p title="noëlle#3370" class="tip">discord</p>.
+    </p>
+  </div>
+</body>
+</html>
