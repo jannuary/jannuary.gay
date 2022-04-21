@@ -2,13 +2,7 @@
 
 @import url('https://rsms.me/inter/inter.css');
 @import "colors.css";
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { 
-  font-family: 'Inter var', sans-serif; 
-  font-feature-settings: 'salt' on, 'ss03' on;
-  }
-}
+
 
 @media (prefers-reduced-motion) { 
 .header, .entry:hover, .entry b::after
