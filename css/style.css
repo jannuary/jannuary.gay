@@ -1,3 +1,5 @@
+/* This is a fucking mess! */
+
 @import url('https://rsms.me/inter/inter.css');
 @import "colors.css";
 html { font-family: 'Inter', sans-serif; }
@@ -35,6 +37,12 @@ a {
 }
 
 /* MAIN PAGE HEADER */
+
+.container {
+  min-width: 100px;
+  width: clamp(100px, 500px, 500px);
+  max-width: 500px;
+}
 .header, .entry {
   border: 1px solid var(--border);
   box-shadow: 0px 0px 0px 1px var(--outline);
@@ -45,11 +53,12 @@ a {
   justify-content: center;
   align-items: center;
   margin: 12px auto;
+  min-width: 100px;
+  max-width: 500px;
 }
 
 .header {
   position: relative;
-  width: 500px;
   height: 163px;
   background: linear-gradient(251deg, #8c56ff, #4b5dff, #f34bff);
   background-size: 600% 600%;
@@ -74,7 +83,6 @@ h {
 /* ENTRY STYLING */
 .entry {
   position: relative;
-  width: 500px;
   height: 48px;
   background-color: var(--button-bg);
   transition: background 300ms ease-out;
