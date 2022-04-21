@@ -1,0 +1,23 @@
+@import "main.css";
+
+.blurb > * {
+  display: flex;
+  justify-content: center;
+  color: var(--button-fg);
+}
+
+.blurb p {
+  width: 500px;
+  line-height: 1.4;
+  display: inline;
+}
+
+.blurb .link {
+  margin: 6px;
+  color: var(--link-fg);
+}
+
+.blurb .tip {
+  text-decoration: underline dotted;
+}
+

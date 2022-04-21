@@ -1,0 +1,95 @@
+@import "main.css";
+
+/* Disable Animations */ 
+@media (prefers-reduced-motion) { 
+.header, .entry:hover, .entry b::after
+  {
+  animation: none !important;
+  transition: none !important;
+  }
+.entry:hover b::after, .entry:focus b::after {
+  margin-left: 2px !important;
+  }
+}
+
+.container {
+  min-width: 150px;
+  max-width: 500px;
+  width: -moz-available;
+}
+.header, .entry {
+  border: 1px solid var(--border);
+  box-shadow: 0px 0px 0px 1px var(--outline);
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px auto;
+  max-width: 500px;
+  min-width: 150px;
+  width: -moz-available;
+}
+
+.header {
+  position: relative;
+  height: 163px;
+  background: linear-gradient(251deg, #8c56ff, #4b5dff, #f34bff);
+  background-size: 600% 600%;
+  animation: headerAnimation 20s ease infinite;
+}
+
+.header h {
+  color: var(--header-fg);
+}
+
+@keyframes headerAnimation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.entry {
+  position: relative;
+  height: 48px;
+  background-color: var(--button-bg);
+  transition: background 300ms ease-out;
+  text-decoration: none;
+}
+
+.entry b {
+  font-weight: 400;
+  color: var(--button-fg);
+}
+
+.entry b::after {
+  content: "→";
+  margin-left: 2px;
+  transition: margin 150ms ease-out;
+}
+
+.entry:hover b::after, .entry:focus b::after {
+  margin-left: 6px;
+}
+
+.entry:hover, .entry:focus {
+  background-color: var(--hover), var(--button-bg);
+}
+
+.entry:focus {
+  border-width: 3px;
+  border-color: var(--focus-ring);
+  transition: border 150ms ease-out;
+}
+
+/* FOOTER */
+footer p {
+ color: var(--button-fg);
+ font-size: 14px;
+ display: flex;
+ opacity: 0.5;
+ justify-content: center;
+ font-weight: 400;
+}
+
