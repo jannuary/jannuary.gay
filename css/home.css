@@ -85,7 +85,7 @@
 }
 
 /* FOOTER */
-footer p {
+footer > * {
  color: var(--button-fg);
  font-size: 14px;
  display: flex;
