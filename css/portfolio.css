@@ -1,0 +1,31 @@
+@import "main.css";
+
+.main-page {
+  align-items: unset !important;
+}
+
+.blurb > * {
+  display: flex;
+  justify-content: center;
+  color: var(--button-fg);
+}
+
+.blurb p {
+  width: 500px;
+  line-height: 1.4;
+  text-justify: center;
+}
+
+.blurb .link {
+  margin: 6px;
+  color: var(--link-fg);
+}
+
+.blurb .tip {
+  text-decoration: underline dotted;
+}
+
+div.icon-group > img {
+  filter: drop-shadow(0 .08rem .1rem rgba(0,0,0,.35)) drop-shadow(0 .4rem .7rem rgba(0,0,0,.18));
+}
+
